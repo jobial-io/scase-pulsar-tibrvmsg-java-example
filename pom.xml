@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.jobial</groupId>
+    <artifactId>scase-tibrv-java-example</artifactId>
+    <version>0.5.3</version>
+
+    <organization>
+        <name>Jobial OÜ</name>
+    </organization>
+    <description>Sample code for Scase in Java using TibrvMsg and Pulsar.</description>
+    
+    <properties>
+        <maven.compiler.source>18</maven.compiler.source>
+        <maven.compiler.target>18</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.jobial</groupId>
+            <artifactId>scase-pulsar_2.13</artifactId>
+            <version>0.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>io.jobial</groupId>
+            <artifactId>scase-tibco-rv_2.13</artifactId>
+            <version>0.5.3</version>
+        </dependency>
+        <dependency>
+            <artifactId>tibco</artifactId>
+            <groupId>tibrv</groupId>
+            <!-- Any version (at least >= 7.4 tested) will do -->
+            <version>8.6</version>
+            <scope>system</scope>
+            <systemPath>${env.TIBCO_RV_ROOT}/lib/tibrvj.jar</systemPath>
+        </dependency>
+    </dependencies>
+    <build>
+    </build>
+</project>
+
+
+
