@@ -17,7 +17,7 @@ import java.util.concurrent.ExecutionException;
 public class GreetingPulsarServer implements GreetingServicePulsarConfig, GreetingServiceImpl {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        var service = greetingServiceConfig.service(requestHandler);
+        var service = greetingServiceConfig.service(requestHandler).get();
         service.startAndJoin().get();
     }
 }

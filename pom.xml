@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.jobial</groupId>
-    <artifactId>scase-tibrv-java-example</artifactId>
-    <version>0.5.3</version>
+    <artifactId>scase-pulsar-tibrvmsg-java-example</artifactId>
+    <version>0.6.0</version>
 
     <organization>
         <name>Jobial OÜ</name>
@@ -19,13 +19,8 @@
     <dependencies>
         <dependency>
             <groupId>io.jobial</groupId>
-            <artifactId>scase-pulsar_2.13</artifactId>
-            <version>0.5.3</version>
-        </dependency>
-        <dependency>
-            <groupId>io.jobial</groupId>
-            <artifactId>scase-tibco-rv_2.13</artifactId>
-            <version>0.5.3</version>
+            <artifactId>scase_2.13</artifactId>
+            <version>0.6.0</version>
         </dependency>
         <dependency>
             <artifactId>tibco</artifactId>

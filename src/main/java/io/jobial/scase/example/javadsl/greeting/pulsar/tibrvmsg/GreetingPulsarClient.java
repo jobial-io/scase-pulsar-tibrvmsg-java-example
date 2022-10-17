@@ -20,7 +20,7 @@ import java.util.concurrent.ExecutionException;
 public class GreetingPulsarClient implements GreetingServicePulsarConfig {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException, TibrvException {
-        var client = greetingServiceConfig.client();
+        var client = greetingServiceConfig.client().get();
         var request = new TibrvMsg();
         request.add("name", "world");
         client.sendRequest(request).whenComplete((response, error) -> {
